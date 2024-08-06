@@ -18,6 +18,7 @@ export default function RootLayout({
   const navigationLinks = [
     { linkUrl: "/", linkTitle: "Home" },
     { linkUrl: "/blog", linkTitle: "Blog" },
+    { linkUrl: "/resume", linkTitle: "Resume" },
   ];
 
   return (
