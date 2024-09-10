@@ -1,5 +1,5 @@
-import Link from "next/link";
-import { FC } from "react";
+import Link from 'next/link';
+import { FC } from 'react';
 
 interface NavigationLinksInterface {
   linkUrl: string;
@@ -12,12 +12,12 @@ interface NavigationBarProps {
 
 const NavigationBar: FC<NavigationBarProps> = ({ links }) => {
   return (
-    <nav className="sticky top-0 bg-darkGreen ">
-      <ul className="flex gap-10 justify-center items-center py-2">
+    <nav className='sticky top-0 bg-darkGreen '>
+      <ul className='flex gap-10 justify-center items-center py-2'>
         {links.map(({ linkUrl, linkTitle }) => {
           return (
             <li key={linkUrl}>
-              <Link className="text-lg" href={linkUrl}>
+              <Link className='text-lg' href={linkUrl}>
                 {linkTitle}
               </Link>
             </li>
